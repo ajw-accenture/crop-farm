@@ -28,6 +28,7 @@ html {
   height: 100%;
   width: 750px;
   margin: 20px auto;
+  position: relative;
 }
 
 #dirt-ground {
@@ -37,4 +38,14 @@ html {
   height: 70vh;
   width: 100%;
   transform: perspective(2000px) rotateX(65deg);
+}
+
+.stacked {
+  position: absolute;
+  top: 0;
+}
+
+.corn-plant-1 {
+  height: 400px;
+  width: 30px;
 }
