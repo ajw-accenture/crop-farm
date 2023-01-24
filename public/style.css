@@ -1,0 +1,36 @@
+@keyframes dayNightBackground {
+  0% {
+		background-position: 50% 0%;
+	}
+	50% {
+		background-position: 50% 100%;
+	}
+	100% {
+		background-position: 50% 0%;
+	}
+}
+
+html, body {
+  height: 95vh;
+  width: 95vw;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(0, rgba(2,0,36,1) 0%, rgba(11,13,38,1) 25%, rgba(14,27,69,1) 50%, rgba(22,116,191,1) 75%, rgba(107,218,224,1) 100%);
+  background-size: 400% 400%;
+  animation: dayNightBackground 300s ease infinite;
+}
+
+#container {
+  height: 100%;
+  width: 750px;
+  margin: 20px auto;
+}
+
+#dirt-ground {
+  /* background: #593C31; */
+  background: url('soil.png') center center no-repeat;
+  background-size: cover;
+  height: 70vh;
+  width: 100%;
+  transform: perspective(2000px) rotateX(65deg);
+}
